@@ -7,7 +7,6 @@ A script for running scripts automatically after boot
        ```
        >py tool.py
        ```
-     - Enter username 
      - Enter file path
        ```
        > C:\{username}\Desktop\{script.py}
