@@ -5,6 +5,9 @@ import getpass
 from platform import system
 import os
 
+class FileError(Exception):
+	pass
+
 def add_for_windows(user,script_file):
     bat = r"C:\Users\%s\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup" % user
     with open(bat+'\\'+"open.bat","w+") as bat_file:
