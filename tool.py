@@ -11,11 +11,12 @@ class FileError(Exception):
 def add_for_windows(user,script_file):
     bat = r"C:\Users\%s\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup" % user
     shutil.copy2(script_file, bat)
+    # for pc that opens up script instad of running
     with open(bat+'\\'+"open.bat","w+") as bat_file:
         bat_file.write(r'python %s' % script_file)
         
 def add_for_linux():
-    pass
+    print("Go and use cron jobs")
 
 if __name__ == "__main__":
     opsys = system()

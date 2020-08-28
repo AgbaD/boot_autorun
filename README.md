@@ -1,6 +1,9 @@
 # boot_autorun
 A script for running scripts automatically after boot
 
+## itch
+for windows, it might not work if you have whitespace in your username
+
 ## usage
    - Windows 
      - run script
